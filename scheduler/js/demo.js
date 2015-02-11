@@ -91,11 +91,11 @@ $(function() {
             field: "ownerId",
             title: "Owner",
             dataSource: [{
-                text: "Owner 1",
+                text: "User 1",
                 value: 1,
                 color: "#f8a311"
             }, {
-                text: "Owner 2",
+                text: "User 2",
                 value: 2,
                 color: "#5110ed"
             }, ]

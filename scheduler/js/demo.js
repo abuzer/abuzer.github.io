@@ -6,7 +6,7 @@ $(function() {
     var DELETE_TASK_ENDPOINT = "http://demos.telerik.com/kendo-ui/service/tasks/destroy"; // returning success
 
     $("#scheduler").kendoScheduler({
-        date: new Date("2013/2/15"),
+        date: new Date("2015/2/15"),
         height: $(window).height() - 2, // substructing 2 pixel for hiding vertical scroll
         views: [
             "day",

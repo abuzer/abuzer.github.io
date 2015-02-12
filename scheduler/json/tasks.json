@@ -7,7 +7,7 @@
     "StartTimezone": null,
     "Start": "2015/2/5 09:00 AM",
     "End": "2015/2/5 10:00 AM",
-    "IsAllDay": true
+    "IsAllDay": false
   },
   {
     "TaskID": 2,

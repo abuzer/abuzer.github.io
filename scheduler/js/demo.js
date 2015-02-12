@@ -3,7 +3,7 @@ $(function() {
     var TASK_LIST_ENDPOINT = "./json/tasks.json";
     var CREATE_TASK_ENDPOINT = "http://demos.telerik.com/kendo-ui/service/tasks/create"; // using demo end point for create events
     var UPDATE_TASK_ENDPOINT = "http://demos.telerik.com/kendo-ui/service/tasks/update"; // using demo end point for update events
-    var DELETE_TASK_ENDPOINT = "./json/delete.json"; // returning success
+    var DELETE_TASK_ENDPOINT = "http://demos.telerik.com/kendo-ui/service/tasks/destroy"; // returning success
 
     $("#scheduler").kendoScheduler({
         date: new Date("2013/2/15"),
@@ -33,7 +33,7 @@ $(function() {
                 },
                 destroy: {
                     url: DELETE_TASK_ENDPOINT,
-                    dataType: "json"
+                    dataType: "jsonp"
                 },
                 parameterMap: function(options, operation) {
                     if (operation !== "read" && options.models) {

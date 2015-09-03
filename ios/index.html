@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+	</title>
+ </head>
+<body>
+
+Few popups will appear to install different applications. Please tap on "Install" and "Open".
+
+<hr>
+
+<p align="center">
+<button type="" id="download-all-apps" onclick="downloadAllApps();" style="margin:0 auto font-size: 14px;"> Download All Apps</button>
+</p>
+
+<a id="link1"  style="display:none;" href="itms-services://?action=download-manifest&url=https://cmlm-jenkins-builds.s3.amazonaws.com/media/LTDMedia/production/ios/LTDMedia-v3.5.0-production0270.plist">link 1</a>
+
+
+<a id="link2"  style="display:none;" href="itms-services://?action=download-manifest&url=https://devices_build.s3.amazonaws.com/Production/beta/ltdmessage/ios/LTDMessage-3.3.4.plist">link 2</a>
+
+
+<a id="link3"  style="display:none;" href="itms-services://?action=download-manifest&url=https://devices_build.s3.amazonaws.com/Production/alpha/ltdevents/ios/LTDEvents-v1.3.0.plist">link 3</a>
+
+
+
+<script type="text/javascript">
+	
+	//$(function(){
+		//alert('asdf');
+	//});
+	function downloadAllApps(){
+			document.getElementById('link3').click()
+			document.getElementById('link2').click()
+			document.getElementById('link1').click()
+		// setTimeout(function(){
+		// },100);
+		// setTimeout(function(){
+		// },100);
+		// setTimeout(function(){
+		// },100);
+	}
+
+	</script>
+
+</body>
+</html>
